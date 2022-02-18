@@ -10,7 +10,7 @@ public class Tutorial {
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private long id;
 
-	@Column(name = "title")
+	@Column(name = "title", nullable = false, length = 150, unique = true)
 	private String title;
 
 	@Column(name = "description")
